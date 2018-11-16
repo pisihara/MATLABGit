@@ -1,5 +1,31 @@
 \documentclass{article}
+\u\documentclass[12pt]{article}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage{url}
+\usepackage{import}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{rotating}
+\usepackage{mathtools}
+\usepackage[multiple]{footmisc}
+\usepackage{xr}
+\usepackage{breakcites}
+\usepackage{matlab-prettifier}
+\usepackage[]{mcode}
+\usepackage{listings} %For code in appendix
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
 
 \title{MATLABGit}
 \author{paul.isihara }
@@ -9,6 +35,13 @@
 
 \maketitle
 
-\section{Introduction}
+\begin{table}[!htpb]
+\centering
+\begin{tabular}{|l|}\hline
+\parbox[b]{6.5in}{\lstinputlisting[style=Matlab-editor,firstline=1, lastline=10, firstnumber=1]{Test1.m}}\\\hline
+\end{tabular}
+\caption{Test script. }
+\label{Table1}
+\end{table}
 
 \end{document}
